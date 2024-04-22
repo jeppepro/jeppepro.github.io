@@ -4,7 +4,7 @@ body {
   font-family: "Inter Tight", "Helvetica", sans-serif;
   background: #0c0c0c;
   color: #fafafa;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
