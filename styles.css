@@ -209,9 +209,6 @@ h2::selection {
   .project-preview {
     padding: 1.6rem;
   }
-}
-
-@media only screen and (max-width: 768px) {
   .project-title {
     gap: 1rem;
     flex-direction: column;
