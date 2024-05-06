@@ -101,10 +101,11 @@ main {
 
 .project-preview {
   border: 1px solid #2c2c2c;
-  padding: 2rem;
+  padding: 4rem;
   margin-bottom: 1rem;
   transition: all .4s ease;
   display: flex;
+  cursor: pointer;
 }
 
 .project-title {
@@ -117,14 +118,9 @@ main {
   gap: 1rem;
 }
 
-.project-preview {
-  max-width: 100vw;
-  padding: 4rem;
-  cursor: pointer;
-}
-
 .project-image {
   width: 100%;
+  height: 100%;
 }
 
 /* Footer content */
