@@ -113,14 +113,11 @@ main {
   justify-content: space-between;
 }
 
-.align-right {
+.info-wrap {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
 }
-
-.align-left {
-  display: flex;
-  gap: 1rem;
 
 .project-image {
   width: 100%;
