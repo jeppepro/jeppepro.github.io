@@ -61,7 +61,7 @@ header {
 
 .title-wrapper {
   display: grid;
-  gap: 0.25rem;
+  gap: 0.3rem;
 }
 
 .header-title {
@@ -119,6 +119,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: baseline;
 }
 
 .project-image {
@@ -210,6 +211,16 @@ h2::selection {
 @media only screen and (max-width: 768px) {
   .project-preview {
     padding: 1.6rem;
+  }
+  .project-title {
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project-preview {
+    padding: 0.8rem;
   }
   .project-title {
     gap: 1rem;
