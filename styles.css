@@ -164,7 +164,7 @@ cursor: pointer;
 
 .project-preview:hover {
   border-color: #6a6a6a;
-  background: #181818;
+  /* background: #181818; */
 }
 
 .button-primary:hover {
