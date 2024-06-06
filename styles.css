@@ -274,9 +274,9 @@ h1, h2, p {
   .project-img {
     order: -1;
   }
-  .project-work {
+  /* .project-work {
     width: 26rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -296,9 +296,9 @@ h1, h2, p {
 } */
 
 @media only screen and (max-width: 480px) {
-  .project-work {
+  /* .project-work {
     width: 100%;
-  }
+  } */
   .heading-large {
     font-size: 2rem;
   }
