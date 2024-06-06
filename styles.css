@@ -45,6 +45,7 @@ body {
 
 p {
   font-size: var(--text-16);
+  color: var(--green);
 }
 
 h1, h2, p {
