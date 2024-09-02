@@ -10,7 +10,7 @@
 
 body {
   background-color: var(--black-darkest);
-  font-family: Inter;
+  font-family: Inter, Helvetica, sans-serif;
   font-size: 0.85rem;
   color: var(--white);
   text-transform: uppercase;
