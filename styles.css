@@ -1,105 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
 
 :root {
-  --white: #F7F7F7;
-  --white-border: #FFFFFF10;
-  --black-darkest: #131313;
-  --black-dark: #161616;
-  --grey: #575757;
+  --white: #F0F0F0;
+  --grey: #595959;
+  --black: #0F0F0F;
+  --border: #FFFFFF10;
+  --gradient-1: linear-gradient(-26deg, rgba(18,18,18,1) 0%, rgba(20,20,20,1) 100%);
+  --gradient-2: linear-gradient(-68deg, rgba(23,23,23,1) 0%, rgba(28,28,28,1) 100%);
+
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-3: 2rem;
+  --spacing-4: 2.5rem;
+  --spacing-5: 4rem;
+  --spacing-6: 6rem;
 }
 
 body {
-  background-color: var(--black-darkest);
-  font-family: Inter, Helvetica, sans-serif;
-  font-size: 0.85rem;
+  font-family: Chakra Petch;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--white);
   text-transform: uppercase;
-  text-wrap: nowrap;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  background-color: var(--black);
+  padding: 0 var(--spacing-1);
 }
 
-h1, h2 {
-  font-size: 0.85rem;
+h1, h2, p {
+  font-size: 0.9rem;
   font-weight: 500;
   margin: 0;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--white);
 }
 
 .text-grey {
   color: var(--grey);
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto 10rem auto;
-  padding: 0 1rem 0 1rem;
+.container-small {
+  max-width: 768px;
+  margin: 0 auto;
 }
 
-.flex-col-8 {
+.container-large {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.flex-col-16 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-3);
 }
 
-.title-wrap {
-  margin: 10rem 0 2rem 0;
-}
-
-.socials-wrap {
+.flex-col-64 {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
+  gap: var(--spacing-5)
+}
+
+.social-wrap {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.link-wrap {
+  display: flex;
+  align-items: start;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-wrap p:hover {
+  text-decoration: none;
 }
 
 .link {
-  text-decoration: underline;
-  cursor: pointer;
+  text-wrap: nowrap;
   color: var(--white);
+  text-decoration: none;
 }
 
-.project-titles {
+.hero-padding {
+ padding: 10rem 0;
+} 
+
+.preview-wrap {
+  padding: var(--spacing-6);
+  background: var(--gradient-1);
+  border-radius: var(--spacing-1);
+  cursor: pointer;
+  display: block;
+}
+
+.preview-image {
+  width: 100%;
+  border-radius: var(--spacing-1);
+  border: 1px solid var(--border);
+}
+
+.label {
+  background: var(--gradient-2);
+  padding: 8px 12px;
+  border-radius: var(--spacing-4);
+  cursor: default;
+}
+
+.border {
+  border: 1px solid var(--border);
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+.label-wrap {
+  display: flex;
+  gap: var(--spacing-1);
+}
+
+.project-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--spacing-3);
+  margin-top: var(--spacing-4);
+}
+
+.text-small {
+  font-size: 0.8rem;
 }
 
 .project {
+  padding-bottom: 5rem;
+}
+
+.max-width-p {
+  max-width: 27rem;
+}
+
+.footer-padding {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.space-btwn {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-.project-preview {
-  background-color: var(--black-dark);
-  border: 1px solid var(--white-border);
-  padding: 4rem;
-  max-width: 42rem;
-  cursor: pointer;
-}
-
-.project-image {
-  box-shadow: 0px 6px 22px 0px rgba(0,0,0,0.44);
-  border: 1px solid var(--white-border);
-  width: 100%;
-}
-
-.text-container {
-  width: 8rem;
 }
 
 @media only screen 
-   and (max-width : 900px) {
-    .container {
-      max-width: 640px;
-    }
-    .project {
-      flex-direction: column-reverse;
-    }
-    .project-titles {
-      margin-top: 1rem;
-    }
-    .text-container {
-      width: auto;
-    }
-    .project-preview {
-      padding: 2rem;
-    }
+   and (max-width : 1000px) {
+   .preview-wrap {
+    padding: var(--spacing-4);
+   }
+}
+
+@media only screen 
+   and (max-width : 768px) {
+   .preview-wrap {
+    padding: var(--spacing-3);
+   }
+   .space-btwn {
+    flex-direction: column;
+    gap: var(--spacing-3)
+   }
+}
+
+.link-wrap:hover > .arrow {
+  transform: translate(1.5px, -1.5px);
+}
+
+.link-wrap > .arrow {
+  transition: transform 0.15s ease;
 }
